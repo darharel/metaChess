@@ -1,0 +1,27 @@
+<!-- 📄 File: index.html -->
+<!-- 📂 Location: chess_web_fixed/templates/ -->
+<!-- 🧠 Language: HTML -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>One-Move Checkmate</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chessboard.js/1.0.0/css/chessboard.min.css" />
+  <style>
+    body { font-family: sans-serif; text-align: center; margin-top: 40px; }
+    #board { width: 400px; margin: 20px auto; }
+    #status { font-size: 1.2em; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h1>♟️ One-Move Checkmate Puzzle</h1>
+  <div id="board"></div>
+  <div id="status">Make your move!</div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chessboard.js/1.0.0/js/chessboard.min.js"></script>
+  <script src="{{ url_for('static', filename='js/puzzles.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
